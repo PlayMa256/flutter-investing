@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:investing/pages/MyHomePage.dart';
-import 'package:investing/pages/Wallet.dart';
+import 'package:investing/pages/wallet/Wallet.dart';
 
 void main() => runApp(MyApp());
 
