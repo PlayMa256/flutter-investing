@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:investing/pages/wallet/components/AmountInvested.dart';
+import 'package:investing/pages/wallet/components/ListOfShares.dart';
 
 class Wallet extends StatelessWidget {
   @override
@@ -14,8 +15,8 @@ class Wallet extends StatelessWidget {
             )
           ],
         ),
-        Row(
-          children: <Widget>[Text("Row2")],
+        Expanded(
+          child: ListOfShares(),
         )
       ],
     );
