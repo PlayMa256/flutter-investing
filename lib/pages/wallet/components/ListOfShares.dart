@@ -31,28 +31,19 @@ class ListOfShares extends StatelessWidget {
           (share) => Container(
             height: 50,
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                Expanded(
-                  flex: 1,
-                  child: Text(share["stock"]),
+                Text(share["stock"]),
+                Text(
+                  share["amount"].toString(),
+                  style: TextStyle(color: Colors.red),
                 ),
-                Expanded(
-                  flex: 1,
-                  child: Text(
-                    share["amount"].toString(),
-                    style: TextStyle(color: Colors.red),
-                  ),
-                ),
-                Expanded(
-                  flex: 1,
-                  child: Text(
-                    NumberFormat.currency(
-                      locale: 'pt-BR',
-                      symbol: "R\$",
-                    ).format(share["price"]),
-                    style: TextStyle(color: Colors.green),
-                  ),
+                Text(
+                  NumberFormat.currency(
+                    locale: 'pt-BR',
+                    symbol: "R\$",
+                  ).format(share["price"]),
+                  style: TextStyle(color: Colors.green),
                 )
               ],
             ),

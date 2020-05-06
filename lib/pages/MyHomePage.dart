@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:investing/pages/graphs/graphs.dart';
 import 'package:investing/pages/wallet/Wallet.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -9,7 +10,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePage extends State<MyHomePage> {
   int tabIndex = 0;
 
-  List<Widget> listWidgets = [Wallet(), Wallet(), Wallet()];
+  List<Widget> listWidgets = [Wallet(), Wallet(), Graphs()];
 
   @override
   Widget build(BuildContext context) {

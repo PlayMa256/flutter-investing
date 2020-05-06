@@ -7,7 +7,7 @@ class Wallet extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        Row(
+        Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             AmountInvested(
